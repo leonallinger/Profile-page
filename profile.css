@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+.item1 {
+  grid-area: cover;
+  background: url(nature-design.jpg) right bottom no-repeat;
+}
+
+.item2 {
+    grid-area: navbar;
+}
+
+.item3 {
+    grid-area: info;
+    border-radius: 2.5%;
+}
+.item4 {
+    grid-area: post;
+    border-radius: 2.5%;
+}
+.item5 {
+    grid-area: photos;
+    border-radius: 2.5%;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 4fr 1fr 3fr 3fr;
+  grid-template-areas:
+  'cover cover cover cover cover'
+  'navbar navbar navbar navbar navbar'
+  'info info post post post'
+  'photos photos post post post';
+    
+  grid-gap: 20px;
+  padding: 25px;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+.grid-container > div {
+  border: solid black 1px;
+}
+
+.profilepic{
+    border-radius: 50%;
+    
+    border: solid black 4px;
+    
+    position: absolute;
+    left: 42%;
+    right: 42%;
+    width: 15%;
+    top: 15%;
+}
+
+li{
+    text-align: left;
+    display: inline-block;
+    padding: 20px;
+}
+
+li:hover {
+  background-color: grey;
+}
