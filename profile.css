@@ -5,31 +5,51 @@
 .item1 {
   grid-area: cover;
   background: url(nature-design.jpg) right bottom no-repeat;
+  flex: 0;
+    
+  border: solid black 1px;
 }
 
 .item2 {
-    grid-area: navbar;
+    grid-area: name;
+    
+    text-align: center;
 }
 
 .item3 {
+    grid-area: navbar;
+    
+    border: solid black 1px;
+}
+
+.item4 {
     grid-area: info;
     border-radius: 2.5%;
-}
-.item4 {
-    grid-area: post;
-    border-radius: 2.5%;
+    padding: 15px;
+    
+    border: solid black 1px;
 }
 .item5 {
+    grid-area: post;
+    border-radius: 2.5%;
+    
+    border: solid black 1px;
+}
+.item6 {
     grid-area: photos;
     border-radius: 2.5%;
+    
+    border: solid black 1px;
 }
 
 
 .grid-container {
   display: grid;
-  grid-template-rows: 4fr 1fr 3fr 3fr;
+  grid-template-rows: 4fr 1fr 1fr 3fr 3fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1f;
   grid-template-areas:
   'cover cover cover cover cover'
+  'name name name name name'
   'navbar navbar navbar navbar navbar'
   'info info post post post'
   'photos photos post post post';
@@ -38,10 +58,6 @@
   padding: 25px;
   padding-right: 200px;
   padding-left: 200px;
-}
-
-.grid-container > div {
-  border: solid black 1px;
 }
 
 .profilepic{
@@ -54,6 +70,8 @@
     right: 42%;
     width: 15%;
     top: 15%;
+    
+    flex: 1;
 }
 
 li{
